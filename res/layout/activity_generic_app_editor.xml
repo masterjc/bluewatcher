@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".GenericAppEditorActivity" >
+
+    <TextView
+        android:id="@+id/generic_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/label_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/generic_app_name"
+        android:layout_toEndOf="@+id/custom_label_checkbox"
+        android:hint="@string/custom_label_title"
+        android:ems="10" />
+
+    <CheckBox
+        android:id="@+id/custom_prefix_checkboxk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/custom_label_checkbox"
+        android:layout_below="@+id/label_edit_text"
+        android:text="@string/custom_prefix_text" />
+
+    <EditText
+        android:id="@+id/edit_alert_prefix_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/custom_prefix_checkboxk"
+        android:layout_toEndOf="@+id/custom_prefix_checkboxk"
+        android:hint="@string/custom_prefix_text"
+        android:ems="10" />
+
+    <ListView
+        android:id="@+id/header_filters_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_alert_type_id"
+        android:layout_below="@+id/available_services_header"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+    <CheckBox
+        android:id="@+id/custom_label_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/header_filters_list"
+        android:layout_alignTop="@+id/label_edit_text"
+        android:text="@string/custom_label_title" />
+
+    <TextView
+        android:id="@+id/alert_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/edit_alert_type_id"
+        android:layout_marginTop="14dp"
+        android:text="@string/edit_alert_type"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/edit_alert_type_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_cancel"
+        android:layout_toEndOf="@+id/alert_type_text" />
+
+    <TextView
+        android:id="@+id/available_services_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/header_filters_list"
+        android:layout_below="@+id/edit_alert_prefix_value"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/header_filters_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/add_header_filter_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/available_services_header"
+        android:layout_alignBottom="@+id/available_services_header"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/round"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/available_services_header"
+        android:text="@string/add_button" />
+
+    <Button
+        android:id="@+id/edit_ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/round"
+        android:textStyle="bold"
+        android:text="@string/ok_text" />
+    
+    <Button
+        android:id="@+id/edit_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/round"
+        android:textStyle="bold"
+        android:text="@string/remove_text" />
+
+</RelativeLayout>

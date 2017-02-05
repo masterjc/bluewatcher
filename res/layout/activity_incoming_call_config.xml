@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bluewatcher.activity.IncomingCallConfigActivity" >
+
+    <TextView
+        android:id="@+id/available_services_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/incoming_call_config"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/incoming_call_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/available_services_header"
+        android:layout_marginTop="30dp"
+        android:text="@string/notify_incoming_calls" />
+
+    <CheckBox
+        android:id="@+id/resolve_contacts_calls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/incoming_call_check"
+        android:layout_below="@+id/incoming_call_check"
+        android:layout_marginStart="14dp"
+        android:text="@string/incoming_call_resolve" />
+
+</RelativeLayout>

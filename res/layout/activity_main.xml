@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.SampleMessageTile"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/Widget.SampleMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/vertical_page_margin"
+        android:layout_marginLeft="@dimen/horizontal_page_margin"
+        android:layout_marginRight="@dimen/horizontal_page_margin"
+        android:layout_marginTop="@dimen/vertical_page_margin"
+        android:gravity="center"
+        android:text="@string/intro_message" />
+
+</LinearLayout>

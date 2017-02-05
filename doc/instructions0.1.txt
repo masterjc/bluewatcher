@@ -1,0 +1,32 @@
+Casio Watcher 0.1 Instructions
+
+[B]From now... Casio Watcher is "CW".[/B]
+
+This 0.1 version only will demonstrate connectivity and alert notification to the watch.
+
+IMPORTANT: You have to shutdown the official Casio G-Shock+ application (kill the process). It's not necessary to uninstall it. Kill it if it's running.
+
+You know that Casio have several problems to implement connectivity. With the official application it's a pain to pair watch and phone. I found this is a watch firmware problem. I tested several BLE devices and connection rocks at first try! Casio do not! With the same phone software. I mean that CW will not do it better. It will do what Casio's Watch firmware allows us ;)
+
+Let's go with the test:
+
+1. Shutdown official Casio G-Shock+ application (if not, CW and official app will collide).
+2. Install "Casio Watcher 0.1 apk".
+3. Run "Casio Watcher".
+4. Now you will be in the "G-Shock BLE" section. CW is scanning for Bluetooth 4.0 capable devices. When it is scanning, you can see "STOP" button upper rigth. CW will scan for 10 seconds.
+5. In the watch, start bluetooth holding down the B button for about two seconds until the connecting screen appears (rag doll trying to connect ;-))
+6. Now, in the CW screen appears your watch (model and addres).
+7. Click in your watch section.
+8. If you have not already paired and connected before using Casio G-Shock+ official app, Android will ask you to pair the watch and the phone.
+9. When you click in your watch, "Watch Manager" screen will appear. When clicking... a connection attempt is made. You will see two important labels: Status and Services. Status points out if the connection has been made. Services will show you if a Casio watch has been connected. If you try to connect to a FitBit One bluetooth 4.0 device, connection status is "Connected" but Services will be "Unavailable".
+10. THIS STEP IS IMPORTANT: Here comes the problems connecting with the watch. If you see "Disconnected" status for 2 or 3 seconds, the Watch closed the connection. So go back to the "Discover" screen again (back button is upper left in the screen). Now, go to step 4 again. You have to repeat steps 4 to 10 till "Connected" status and "Available" services appear.
+Every time you go back and click your watch model on the phone screen, a single connection is stablished. If it is broken, try it again, and again, and again. Do not wait in the "Watch Manager" screen because no reconnection is made. Casio do it for you but hides user control over the connection. I prefer to turn back 3 times in 10 seconds to wait eternally till the official app connects!!
+11. IMPORTANT: If you are a lucky man and "Connected" status and "Available" services appear, please wait till you phone shows the fixed bluetooth simbol and the dancing doll desapears!
+12. Once you are connected and the watch seems to be connected too (fixed bluetooth simbol)... let's try the sample call notification. Click "ALERT" button. In 1 second you will receive a call notification in your watch saying the caller is "Casio Watcher".
+13. EXTRA TEST: If you connected watch and device, please, test the reconnection!!!! go away without your phone and come back again...
+
+And that's all!!! CW can discover if your phone supports BLE (bluetooth 4.0) connections, starts your phones bluetooth in case it's off... oh, and it have an "About" screen!! lol
+
+I send the apk to the people who requested me. You are free to send your friends this apk but I want to control a supported environment matrix (Operating system, device, watch model...).
+
+And remember... it's not a professional and final application, it can crash, it can lack... feel free to tell me all the abnormal things you see and functional requeriments you wish.

@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.bluewatcher.activity.WhatsappConfigActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/available_services_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/whatsapp_config"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/whatsappGroupCheckbox"
+        android:layout_below="@+id/whatsappGroupCheckbox" >
+
+        <RadioButton
+            android:id="@+id/radioDelay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:checked="true"
+            android:text="@string/radio_time_based" />
+
+        <RadioButton
+            android:id="@+id/radio_after_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/radio_after_read" />
+
+        <RadioButton
+            android:id="@+id/radio_notify_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/radio_alert_all" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/whatsappGroupCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/generic_app_name"
+        android:layout_below="@+id/whatsapp_notification_checkbox"
+        android:layout_marginTop="16dp"
+        android:text="@string/whatsapp_notify_groups" />
+
+    <TextView
+        android:id="@+id/generic_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/filter_text" />
+
+    <EditText
+        android:id="@+id/notification_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/generic_app_name"
+        android:layout_below="@+id/generic_app_name"
+        android:ems="10"
+        android:hint="@string/hint_filter" >
+
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/whatsapp_notification_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/available_services_header"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/whatsapp_notification" />
+
+    <EditText
+        android:id="@+id/delay_time"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radioGroup1"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/radioGroup1"
+        android:ems="10"
+        android:hint="@string/hint_delay"
+        android:inputType="number" />
+
+</RelativeLayout>

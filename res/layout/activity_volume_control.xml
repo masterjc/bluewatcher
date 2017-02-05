@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bluewatcher.activity.MusicControlActivity" >
+
+    <TextView
+        android:id="@+id/volume_control_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/phone_control_menu_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/volume_control_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/volume_control_header"
+        android:layout_marginTop="16dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/volume_control_description"
+        android:layout_marginTop="28dp"
+        android:text="@string/default_upper_left_button"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="28dp"
+        android:text="@string/default_upper_right_button"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="28dp"
+        android:text="@string/default_down_right_button"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+    
+   
+    
+    <TextView
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="28dp"
+        android:text="@string/gba400_wheel_up_button"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="28dp"
+        android:text="@string/gba400_wheel_down_button"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/phone_control_info_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:textStyle="bold"
+        android:layout_below="@+id/volume_control_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="@string/phone_control_info_button"
+         />
+
+</RelativeLayout>

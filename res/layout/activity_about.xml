@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#abcdef"
+    tools:context=".AboutActivity" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="1" >
+
+        <TextView
+            android:id="@+id/watch_name_content"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_row="0"
+            android:text="@string/about_developer"
+            android:textColor="@color/black_overlay"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/finder_warn_message"
+            android:layout_width="match_parent"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:gravity="center_horizontal"
+            android:text="@string/app_description"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="245dp"
+            android:layout_height="168dp"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_row="0"
+            android:text="@string/warranty_lost"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black_overlay"
+            android:textStyle="italic" />
+
+    </GridLayout>
+
+</FrameLayout>

@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bluewatcher.activity.NotificationsActivity" >
+
+  	 <TextView
+  	     android:id="@+id/notifications_header"
+  	     android:layout_width="wrap_content"
+  	     android:layout_height="wrap_content"
+  	     android:layout_alignParentTop="true"
+  	     android:layout_centerHorizontal="true"
+  	     android:text="@string/notifications_service"
+  	     android:textAppearance="?android:attr/textAppearanceLarge"
+  	     android:textStyle="bold" />
+  	 
+  	 <ListView
+  	     android:id="@+id/list_notifications_view"
+  	     android:layout_width="match_parent"
+  	     android:layout_height="wrap_content"
+  	     android:layout_alignParentBottom="true"
+  	     android:layout_below="@+id/notifications_header"
+  	     android:layout_centerHorizontal="true" >
+  	 </ListView>
+
+</RelativeLayout>

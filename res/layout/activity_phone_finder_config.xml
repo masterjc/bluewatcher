@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bluewatcher.activity.PhoneFinderConfigActivity" >
+
+    <TextView
+        android:id="@+id/phone_finder_config_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/phone_finder_service"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+    
+    <CheckBox
+        android:id="@+id/phone_finder_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_finder_config_header"
+        android:layout_marginTop="30dp"
+        android:text="@string/enable_phone_finder" />
+
+    <EditText
+        android:id="@+id/finder_time_delay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/phone_control_mode"
+        android:layout_alignBottom="@+id/phone_control_mode"
+        android:layout_alignEnd="@+id/phone_finder_config_header"
+        android:layout_alignRight="@+id/phone_finder_check"
+        android:layout_toEndOf="@+id/phone_control_mode"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/hint_delay_seconds" />
+
+    <TextView
+        android:id="@+id/phone_control_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phone_finder_check"
+        android:layout_alignStart="@+id/phone_finder_check"
+        android:layout_below="@+id/phone_finder_check"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/phone_finder_delay" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phone_finder_check"
+        android:layout_below="@+id/finder_time_delay"
+        android:layout_marginTop="28dp"
+        android:text="@string/finder_alert_volume_text" />
+
+    <SeekBar
+        android:id="@+id/finder_volume_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2" />
+
+</RelativeLayout>
